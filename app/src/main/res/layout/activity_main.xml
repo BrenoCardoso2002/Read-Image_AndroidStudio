@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="16dp"
+    android:theme="@style/Theme.Material3.DayNight"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:contentDescription="@string/img"
+        android:id="@+id/img_image_selected"
+        android:layout_width="355dp"
+        android:layout_height="355dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:padding="5dp"
+        android:background="@drawable/image_style_border"
+        android:src="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:endIconMode="clear_text"
+        android:layout_marginHorizontal="25dp"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        android:hint="@string/insira_o_nome_da_imagem">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_ImageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/bt_search_image"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_image"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        android:textSize="24sp"
+        android:background="@drawable/send_image_style_border"
+        android:layout_marginHorizontal="32dp"/>
+</LinearLayout>
